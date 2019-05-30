@@ -4,7 +4,7 @@
 		module="mytemplate-scala_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20190522120606"
+		publication="20190530154827"
 	>
 		<description>
 		mytemplate-scala
@@ -35,5 +35,6 @@
 		<dependency org="org.scala-lang" name="scala-compiler" rev="2.11.7" conf="scala-tool->default,optional(default)"/>
 		<dependency org="org.scala-lang" name="scala-library" rev="2.11.7" conf="scala-tool->default,optional(default);compile->default(compile)"/>
 		<dependency org="org.scalatest" name="scalatest_2.11" rev="2.2.4" conf="test->default(compile)"/>
+		<dependency org="org.mongodb.scala" name="mongo-scala-driver_2.11" rev="2.6.0" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>
