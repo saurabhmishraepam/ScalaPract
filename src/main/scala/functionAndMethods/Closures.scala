@@ -30,7 +30,29 @@ object Closures{
     greetingFrench("Rahul")
     greetingHindi("satish")
 
+    var dataMod=dataModifier
+
+    dataMod("rohit")
+
+    var dataMod1=dataModifier
+    dataMod("kunal")
   }
+
+
+  def dataModifier={
+          //outer scope values
+    var data: Array[String]= Array("saurabh","satish", "gopi")
+
+
+        (name:String)=>{
+          data.update(0,name)
+          data.foreach(v =>{println(v)})
+
+        }
+  }
+
+
+
 
 }
 
