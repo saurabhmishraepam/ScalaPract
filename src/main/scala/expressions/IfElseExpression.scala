@@ -11,7 +11,7 @@ object IfElseExpression{
     val number : Double =1
     val denom : Double =0;
 
-    var ifElse= if(denom !=0) { number/denom } else {None}
+    var ifElse= if(denom !=0) { number/denom } else if(denom==1) {None}
     // internally it uses type inference
 
     var ifElseDouble= if(denom !=0) { number/denom } else {0}

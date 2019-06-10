@@ -9,7 +9,9 @@ class ByNameParameter {
     println("invoked methodFetch") //executed first
     name.toLowerCase
   }
-
+ /* def methodByName(name:=> String){
+    println(s"Hello $name")
+  }*/
 }
 
 

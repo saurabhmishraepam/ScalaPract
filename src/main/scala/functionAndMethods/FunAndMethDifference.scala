@@ -6,7 +6,7 @@ class FunAndMethDifference {
   def method1(): Unit={
     println("Method1 invoked ");
   }
-// this is a function def it is internally an object of type <function1>
+// this is a function def it is internally an object of type <function23>
   var fun= (v: Int) =>{
     println("invoking value "+ v)
     2000

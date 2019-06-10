@@ -38,7 +38,7 @@ class MatchExpression {
     var dayOfWeekExpression = toLowerString(dayofWeek) match {
       case  "monday" => "Start of week"
       case  "sunday" => "end of week"
-      case day  if(day == "saturday")=> dayofWeek +" of the week pattern checked"
+      case day  if(day == "saturday" | day == "tuesday" )=> dayofWeek +" of the week pattern checked"
     }
     dayOfWeekExpression
   }

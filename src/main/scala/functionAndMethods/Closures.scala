@@ -8,9 +8,9 @@ class Closures {
 }
 
 object Closures{
-
+  var date=Calendar.getInstance().getTime.toString
   def greeting=(lang: String) =>{
-    var date=Calendar.getInstance().getTime.toString
+
     // outer scope
     lang match{
         //inner scope accessing variable of the outer scope
@@ -42,8 +42,6 @@ object Closures{
   def dataModifier={
           //outer scope values
     var data: Array[String]= Array("saurabh","satish", "gopi")
-
-
         (name:String)=>{
           data.update(0,name)
           data.foreach(v =>{println(v)})
